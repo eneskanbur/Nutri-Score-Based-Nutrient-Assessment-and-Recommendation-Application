@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Renk paletinize uygun özel TextInputLayout stili -->
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Outline rengini kırmızı ana renkten ayarla -->
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+
+        <!-- Hint text rengi -->
+        <item name="hintTextColor">@color/colorTextPrimary</item>
+
+        <!-- Arka plan rengi -->
+        <item name="boxBackgroundColor">#FFFFFF</item>
+
+        <!-- Hint animasyon ayarları -->
+        <item name="hintAnimationEnabled">true</item>
+
+        <!-- Error durumunda stroke rengi -->
+        <item name="boxStrokeErrorColor">@color/colorError</item>
+
+        <!-- Metin rengi -->
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+</resources>
