@@ -13,7 +13,7 @@ class SignInPageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_loginpage, container, false)
+        return inflater.inflate(R.layout.fragment_login_page, container, false)
     }
 
 }
