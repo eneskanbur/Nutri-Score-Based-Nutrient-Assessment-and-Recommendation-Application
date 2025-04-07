@@ -6,14 +6,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.knbrgns.nutriscoreapp.R
+import com.knbrgns.nutriscoreapp.databinding.FragmentSignUpPageBinding
 
 class SignUpPageFragment : Fragment() {
+    private var _binding: FragmentSignUpPageBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_registration_page, container, false)
+        _binding = FragmentSignUpPageBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

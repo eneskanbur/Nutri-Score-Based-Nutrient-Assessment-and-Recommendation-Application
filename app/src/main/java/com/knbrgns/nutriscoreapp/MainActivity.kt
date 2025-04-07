@@ -5,18 +5,26 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.databinding.DataBindingUtil
+import com.knbrgns.nutriscoreapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private var keepSplashScreen = true
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
         splashScreen.setKeepOnScreenCondition { keepSplashScreen }
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        inflateActivity()
         splashHandler()
+    }
+
+    private fun inflateActivity(){
+        val view = R.layout.activity_main
+        binding = DataBindingUtil.setContentView(this, view)
     }
 
     private fun splashHandler(){
