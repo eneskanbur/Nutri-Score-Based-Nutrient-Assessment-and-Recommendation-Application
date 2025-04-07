@@ -11,11 +11,11 @@
         android:id="@+id/tv_signup_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_xxlarge"
         android:text="@string/signup_title"
         android:textColor="@color/colorTextPrimary"
-        android:textSize="36sp"
+        android:textSize="@dimen/text_size_xlarge"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,10 +24,10 @@
         android:id="@+id/tv_signup_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/margin_small"
         android:text="@string/signup_subtitle"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_medium"
         app:layout_constraintStart_toStartOf="@+id/tv_signup_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_signup_title" />
 
@@ -36,13 +36,14 @@
         style="@style/CustomTextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_xlarge"
         android:hint="@string/signup_full_name_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_signup_subtitle">
+        app:layout_constraintTop_toBottomOf="@+id/tv_signup_subtitle"
+        app:layout_constraintWidth_max="@dimen/max_text_field_width">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_full_name"
@@ -56,11 +57,12 @@
         style="@style/CustomTextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_medium"
         android:hint="@string/signup_email_hint"
         app:layout_constraintEnd_toEndOf="@+id/til_full_name"
         app:layout_constraintStart_toStartOf="@+id/til_full_name"
-        app:layout_constraintTop_toBottomOf="@+id/til_full_name">
+        app:layout_constraintTop_toBottomOf="@+id/til_full_name"
+        app:layout_constraintWidth_max="@dimen/max_text_field_width">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_email"
@@ -74,12 +76,13 @@
         style="@style/CustomTextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_medium"
         android:hint="@string/signup_password_hint"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="@+id/til_email"
         app:layout_constraintStart_toStartOf="@+id/til_email"
-        app:layout_constraintTop_toBottomOf="@+id/til_email">
+        app:layout_constraintTop_toBottomOf="@+id/til_email"
+        app:layout_constraintWidth_max="@dimen/max_text_field_width">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
@@ -93,12 +96,13 @@
         style="@style/CustomTextInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_medium"
         android:hint="@string/signup_reenter_password_hint"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="@+id/til_password"
         app:layout_constraintStart_toStartOf="@+id/til_password"
-        app:layout_constraintTop_toBottomOf="@+id/til_password">
+        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        app:layout_constraintWidth_max="@dimen/max_text_field_width">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password_reenter"
@@ -110,22 +114,24 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_create_account"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/margin_xlarge"
         android:background="@drawable/button_background"
         android:text="@string/signup_create_account_button"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/til_password_reenter"
         app:layout_constraintStart_toStartOf="@+id/til_password_reenter"
-        app:layout_constraintTop_toBottomOf="@+id/til_password_reenter" />
+        app:layout_constraintTop_toBottomOf="@+id/til_password_reenter"
+        app:layout_constraintWidth_max="320dp" />
 
     <TextView
         android:id="@+id/tv_already_have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_medium"
         android:text="@string/signup_already_have_account"
-        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/text_size_small"
         app:layout_constraintEnd_toStartOf="@+id/tv_sign_in"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/btn_create_account"
@@ -135,10 +141,10 @@
         android:id="@+id/tv_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="@dimen/margin_small"
         android:text="@string/signup_sign_in"
-        android:textColor="@color/colorTextPrimary"
-        android:textSize="14sp"
+        android:textColor="@color/colorTextAccent"
+        android:textSize="@dimen/text_size_small"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_already_have_account"
         app:layout_constraintEnd_toEndOf="@+id/btn_create_account"
