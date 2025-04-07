@@ -13,4 +13,8 @@
     <string name="signup_create_account_button">Create Account</string>
     <string name="signup_already_have_account">Already have an account?</string>
     <string name="signup_sign_in">Sign In</string>
+    
+    <!-- Splash Screen -->
+    <string name="app_logo_description">NutriScore application logo</string>
+
 </resources>

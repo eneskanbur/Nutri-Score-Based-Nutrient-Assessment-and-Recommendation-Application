@@ -23,4 +23,8 @@
     <dimen name="button_corner_radius">8dp</dimen>
 
     <dimen name="max_text_field_width">488dp</dimen>
+
+    <!-- Splash Image View -->
+    <dimen name="splash_image_view_width">120dp</dimen>
+    <dimen name="splash_image_view_height">120dp</dimen>"
 </resources>

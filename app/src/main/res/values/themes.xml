@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.NutriScoreBasedApplication" parent="Base.Theme.NutriScoreBasedApplication" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/background</item> <!-- Yeni test logo -->
+        <item name="windowSplashScreenAnimationDuration">200</item> <!-- Daha kısa süre -->
+        <item name="postSplashScreenTheme">@style/Theme.NutriScoreBasedApplication</item> <!-- Tam tema yolu -->
+    </style>
 </resources>

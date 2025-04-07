@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Renk paletinize uygun özel TextInputLayout stili -->
     <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <!-- Outline rengini kırmızı ana renkten ayarla -->
         <item name="boxStrokeColor">@color/colorPrimary</item>
