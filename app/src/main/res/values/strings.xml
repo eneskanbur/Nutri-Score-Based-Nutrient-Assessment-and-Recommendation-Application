@@ -17,4 +17,15 @@
     <!-- Splash Screen -->
     <string name="app_logo_description">NutriScore application logo</string>
 
+    <!-- Sign In Screen -->
+    <string name="signin_welcome_back">Welcome back!</string>
+    <string name="signin_login_subtitle">Login in to continue</string>
+    <string name="signin_forgot_password">Forgot Password?</string>
+    <string name="signin_email_hint">Email</string>
+    <string name="signin_password_hint">Password</string>
+    <string name="signin_no_account">Dont have an account?</string>
+    <string name="signin_sign_up">Sign Up</string>
+    <string name="signin_login_button">Login</string>
+
+
 </resources>
