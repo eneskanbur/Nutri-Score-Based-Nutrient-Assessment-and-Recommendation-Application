@@ -14,6 +14,8 @@
         <!-- Arka Plan Renkleri -->
         <color name="colorBackground">#A3D805</color>         <!-- SVG'deki başlangıç gradient rengi -->
         <color name="colorBackgroundLight">#759F04</color>    <!-- SVG'deki bitiş gradient rengi -->
+        <color name="colorWavyBackground">#FFF8E6</color>    <!-- Login page sayfasının alt yarısının rengi -->
+
 
         <!-- Durum Renkleri -->
         <color name="colorSuccess">#2E7D32</color>            <!-- Başarı yeşili -->
