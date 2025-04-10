@@ -6,9 +6,12 @@
 
         <!-- Hint text rengi -->
         <item name="hintTextColor">@color/colorTextPrimary</item>
+        <item name="android:textColorHint">@color/colorTextHint</item>
 
         <!-- Arka plan rengi -->
         <item name="boxBackgroundColor">#FFFFFF</item>
+
+        <item name="hintTextAppearance">@style/CustomHintTextAppearance</item>
 
         <!-- Hint animasyon ayarları -->
         <item name="hintAnimationEnabled">true</item>
@@ -18,5 +21,33 @@
 
         <!-- Metin rengi -->
         <item name="android:textColor">@color/colorTextPrimary</item>
+
+
     </style>
+
+    <style name="CustomHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Daha büyük metin boyutu -->
+        <item name="android:textSize">16sp</item>
+
+        <!-- Belirgin renk -->
+        <item name="android:textColor">@color/colorPrimary</item>
+
+        <!-- Daha kalın ve keskin font -->
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+
+        <!-- Metin arası boşluk ve daha profesyonel görünüm -->
+        <item name="android:letterSpacing">0.02</item>
+
+        <!-- Hafif gölge ile daha belirgin görünüm -->
+        <item name="android:shadowColor">#22000000</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+
+        <!-- Opsiyonel olarak metin ölçeklendirme -->
+        <item name="android:textScaleX">1.05</item>
+    </style>
+
+
 </resources>

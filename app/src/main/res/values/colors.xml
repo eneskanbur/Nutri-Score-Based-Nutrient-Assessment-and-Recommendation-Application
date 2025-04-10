@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Ana Renkler -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-        <!-- Ana Renkler -->
-        <color name="colorPrimary">#73020C</color>             <!-- Koyu kırmızı - Vurgulu metinler ve butonlar için -->
-        <color name="colorPrimaryLight">#D32F2F</color>       <!-- Açık kırmızı - İkincil vurgular için -->
+    <color name="colorPrimary">#73020C</color>
+    <color name="colorPrimaryLight">#D32F2F</color>
 
-        <!-- Metin Renkleri -->
-        <color name="colorTextPrimary">#2C3E50</color>        <!-- Koyu gri - Ana metin için -->
-        <color name="colorTextSecondary">#34495E</color>      <!-- Hafif koyu gri - İkincil metinler için -->
-        <color name="colorTextAccent">#73020C</color>         <!-- Vurgu metni için koyu kırmızı -->
+    <!-- Metin Renkleri -->
+    <color name="colorTextPrimary">#2C3E50</color>
+    <color name="colorTextSecondary">#34495E</color>
+    <color name="colorTextHint">#757575</color>
+    <color name="colorTextAccent">#73020C</color>
 
-        <!-- Arka Plan Renkleri -->
-        <color name="colorBackground">#A3D805</color>         <!-- SVG'deki başlangıç gradient rengi -->
-        <color name="colorBackgroundLight">#759F04</color>    <!-- SVG'deki bitiş gradient rengi -->
-        <color name="colorWavyBackground">#FFF8E6</color>    <!-- Login page sayfasının alt yarısının rengi -->
+    <!-- Arka Plan Renkleri -->
+    <color name="colorBackground">#A3D805</color>
+    <color name="colorBackgroundLight">#759F04</color>
+    <color name="colorWavyBackground">#FFF8E6</color>
 
 
-        <!-- Durum Renkleri -->
-        <color name="colorSuccess">#2E7D32</color>            <!-- Başarı yeşili -->
-        <color name="colorError">#D32F2F</color>              <!-- Hata kırmızısı -->
-        <color name="colorWarning">#F25C05</color>            <!-- Uyarı turuncusu -->
+    <!-- Durum Renkleri -->
+    <color name="colorSuccess">#2E7D32</color>
+    <color name="colorError">#D32F2F</color>
+    <color name="colorWarning">#F25C05</color>
 
 </resources>
